@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LargeCard from "../components/LargeCard";
 import MediumCard from "../components/MediumCard";
-import SmallCard from "../components/SmallCard";
+import SmallCards from "../components/SmallCards";
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -25,10 +25,10 @@ export default function Home({ exploreData, cardsData }) {
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
 
-          {/* SmallCards- Pull some data from the server */}
+          {/* SmallCardss- Pull some data from the server */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {exploreData?.map(({ img, distance, location }) => (
-              <SmallCard
+              <SmallCards
                 key={img}
                 img={img}
                 distance={distance}
