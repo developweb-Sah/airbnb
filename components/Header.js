@@ -5,6 +5,7 @@ import {
   GlobeAltIcon,
   MenuIcon,
   UserCircleIcon,
+  // UsersIcon,
 } from "@heroicons/react/solid";
 
 export default function Header() {
